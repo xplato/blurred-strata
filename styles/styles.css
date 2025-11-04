@@ -1,27 +1,13 @@
 @import "tailwindcss";
 
-/*:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}*/
-
 @theme {
     --color-dracula: #ff0031;
 
     --font-inter: var(--font-inter);
-    --font-poppins: var(--font-poppins);
-    --font-sora: var(--font-sora);
 }
 
-/*@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}*/
-
 body {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
