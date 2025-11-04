@@ -9,6 +9,9 @@ export default function WithPageTransition({ children }: PropsWithChildren) {
   return (
     <>
       <LoadingShades />
+
+      {/* Add a static element which Framer Motion/GSAP can ref to call insertBefore */}
+      <div />
       {children}
     </>
   );

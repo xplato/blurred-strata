@@ -2,7 +2,6 @@ import type { AppProps } from "next/app";
 import ReactLenis from "lenis/react";
 import { AnimatePresence } from "motion/react";
 
-import Cursor from "~/components/root/Cursor";
 import { fontClassNames } from "~/lib/fonts";
 
 import "styles/styles.css";
@@ -22,7 +21,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <AnimatePresence mode="wait" initial={false}>
           <Component key={router.pathname} {...pageProps} />
         </AnimatePresence>
-        <Cursor />
+        {/*<Cursor />*/}
       </div>
     </ReactLenis>
   );
